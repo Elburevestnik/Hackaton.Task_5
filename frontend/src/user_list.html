@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User's list</title>
+    <link rel="stylesheet" href="../css/user_list.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="../vue/vueUserList.js"></script>
+</head>
+<body>
+<div class="front_box">
+
+</div>
+<header>
+    <div class="wrapper-relative">
+        <div id="h1">
+            <h1>Burevestnik</h1>
+        </div>
+        <div id="article">
+            <article> User's list </article>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="form-wrapper">
+        <table>
+            <tr><th>Name</th><th>Email</th></tr>
+            <tr v-for="user in users">
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
+        </table>
+        <button type="button" @click="getUsers">Get User's List</button>
+
+    </div>
+    <div class="wrapper">
+        <p id="left">Log in</p>
+        <p id="right">Main list</p>
+    </div>
+</main>
+    <footer>
+
+    </footer>
+
+<a class="slider__control slider__control_left" href="login.html" role="button"></a>
+<a class="slider__control slider__control_right" href="main.html" role="button"></a>
+</body>
+</html>

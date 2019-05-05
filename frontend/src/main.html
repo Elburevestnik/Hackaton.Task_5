@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Main list</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/aside.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script defer src="../js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="../vue/vueHello.js"></script>
+    <script defer src="../vue/vueMain.js"></script>
+</head>
+
+<body>
+<div class="slider">
+
+    <div class="slider__wrapper">
+        <div class="slider__item">
+
+            <div style="background: url('../css/img/1list.jpg'); background-size: cover;">
+                <div class="front_box">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="slider__item">
+
+            <div style="background: url('../css/img/2list.jpg'); background-size: cover;">
+
+                <div class="front_box">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="slider__item">
+
+            <div style="background: url('../css/img/3list.jpg'); background-size: cover;">
+
+                <div class="front_box">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--<div class="header_background"></div>-->
+    <header>
+        <div class="wrapper-relative">
+            <div id="h1">
+                <h1>Burevestnik</h1>
+            </div>
+        <div id="nav">
+            <nav>
+                <a href="reg_list.html" onclick="return true">Registration</a>
+                <a href="login.html" onclick="return true">Log in</a>
+                <a href="user_list.html" onclick="return true">User's list</a>
+            </nav>
+        </div>
+        <div id="article">
+        <article> {{ hello }} </article>
+        </div>
+        </div>
+    </header>
+    <div class="content_block">
+        <div class="help">
+            <main>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5x8nkYtKVlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </main>
+            <aside>
+                <div class="aside-background">
+                        <label id="label_email">Email</label>
+                        <input id="email" type="email">
+                        <label id="label_password">Password</label>
+                        <input id="password" type="password">
+                    <button id="log" @click="find_user">Log in</button>
+                    <button id="reg"><a href="reg_list.html">Registration</a></button>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right" href="#" role="button"></a>
+</div>
+</body>
+</html>
+

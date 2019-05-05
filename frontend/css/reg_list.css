@@ -1,0 +1,298 @@
+html {
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: url("img/1list.jpg");
+    background-size: cover;
+}
+.front_box {
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    background: black;
+    opacity: 0.5;
+}
+@font-face {
+    font-family: Denistina; /* Гарнитура шрифта */
+    src: url(./font/8591.ttf); /* Путь к файлу со шрифтом */
+}
+.header_background {
+
+    background: black;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+}
+header {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    top: 0%;
+}
+.wrapper-relative {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+#h1 {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+}
+h1 {
+    font-weight: normal;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    font-family: Denistina;
+    text-align: center;
+    font-size: 60px;
+}
+#article {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 60%;
+
+}
+article {
+    text-align: center;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+article:hover {
+    color: darkolivegreen;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.slider__control {
+    position: fixed;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: white;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 2%;
+}
+
+.slider__control_right {
+    right: 2%;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    top: 35%;
+}
+
+.slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.main-wrapper{
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+main {
+    position: absolute;
+    top: 20%;
+    bottom: 6%;
+    width: 100%;
+    height: 74%;
+
+}
+.wrapper{
+    position: relative;
+
+}
+p {
+    color: white;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 20px;
+    opacity: 0.2;
+}
+p:hover {
+    opacity: .9;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+#left {
+    position: fixed;
+    top: 40%;
+    left: 2%;
+}
+#right {
+    position: fixed;
+    top: 40%;
+    right: 2%;
+}
+form {
+    position: relative;
+    top:20%;
+    left: 30%;
+    right: 30%;
+    bottom: 20%;
+    height: 60%;
+    width: 40%;
+    margin: 0
+;
+}
+fieldset {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 1%;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+}
+.form-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#name {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    right: 25%;
+    bottom: 74%;
+    width: 48%;
+    height: 8%;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    padding: 1%;
+    font-family: Arial;
+}
+.label-name {
+    position: absolute;
+    top: 14%;
+    left: 25%;
+    bottom: 79%;
+    width: auto;
+    height: 6%;
+}
+#email {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    bottom: 65%;
+    width: 48%;
+    height: 8%;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    padding: 1%;
+    font-family: Arial;
+}
+.label-email {
+    position: absolute;
+    top: 34%;
+    left: 25%;
+    bottom: 75%;
+    width: auto;
+    height: 6%;
+}
+#password {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    right: 25%;
+    bottom: 45%;
+    width: 48%;
+    height: 8%;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    font-family: Arial;
+    padding: 1%;
+}
+.label-password {
+
+    position: absolute;
+    top: 54%;
+    left: 25%;
+    bottom: 55%;
+    width: auto;
+    height: 6%;
+}
+button {
+    position: absolute;
+    top: 77%;
+    left: 35%;
+    right: 35%;
+    bottom: 13%;
+    width: 30%;
+    height: 10%;
+    border: 1px solid white;
+    background: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+}
+button:hover {
+    background: white;
+    color: darkolivegreen;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+footer {
+    position: absolute;
+    background: black;
+    opacity: 0.9;
+    height: 6%;
+    width: inherit;
+    bottom: 0;
+}

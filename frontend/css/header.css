@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Denistina; /* Гарнитура шрифта */
+    src: url(./font/8591.ttf); /* Путь к файлу со шрифтом */
+}
+.header_background {
+
+    background: black;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+}
+header {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    top: 0%;
+}
+.wrapper-relative {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+#h1 {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+}
+h1 {
+    font-weight: normal;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    font-family: Denistina;
+    text-align: center;
+    font-size: 50px;
+}
+#nav {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 40%;
+}
+nav {
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    font-size: 30px;
+}
+a {
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-decoration: none;
+}
+a:link, :visited, :active {
+    color: white;
+}
+a:hover {
+    color: darkolivegreen;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+#article {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 70%;
+
+}
+article {
+    text-align: center;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    font-family: Denistina;
+    text-align: center;
+    font-size: 40px;
+}

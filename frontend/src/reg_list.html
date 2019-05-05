@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/reg_list.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="../vue/vueReg.js"></script>
+</head>
+<body>
+<div class="front_box">
+
+</div>
+<header>
+    <div class="wrapper-relative">
+        <div id="h1">
+            <h1>Burevestnik</h1>
+        </div>
+        <div id="article">
+            <article> Registration </article>
+        </div>
+    </div>
+</header>
+<main>
+    <form id="vueForm">
+        <fieldset>
+            <div class="form-wrapper">
+                <label class="label-name">Name</label>
+                <input id="name" type="text">
+                <label class="label-email">Email</label>
+                <input id="email" type="email">
+                <label class="label-password">Password</label>
+                <input id="password" type="password">
+                <button name="enter" type="submit" @click="add_user">Registration</button>
+            </div>
+        </fieldset>
+    </form>
+    <div class="wrapper">
+        <p id="left">Main list</p>
+        <p id="right">Log in</p>
+    </div>
+</main>
+    <footer>
+
+    </footer>
+
+<a class="slider__control slider__control_left" href="main.html" role="button"></a>
+<a class="slider__control slider__control_right" href="login.html" role="button"></a>
+</body>
+</html>
